@@ -1,0 +1,339 @@
+.bg { 
+  background: url("https://upload.wikimedia.org/wikipedia/commons/3/38/Jan_Matejko%2C_Bitwa_pod_Grunwaldem.jpg");
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lifepoints{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+Button{
+  width:50%;
+}
+
+.custom{
+  padding:5px;
+  margin:5px;
+}
+
+.custom_2{
+  width:100%;
+  border:none !important;
+  outline: none;
+}
+
+.custom_3{
+  margin:auto;
+}
+
+.modal-dialog{
+  height:auto !important;
+}
+
+.modal-content{
+  height:20% !important;
+  width:150% !important;
+  margin-right:-25%;
+  margin-left:-25%;
+  overflow: hidden;
+}
+
+.rounded-pill-quiz{
+  min-width: 100px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.button_color{
+  background-color:rgba(163, 163, 163, 0.726) !important;
+  border-color:rgb(177, 177, 177) !important ;
+  color:black !important;
+}
+.button_color:hover{
+  background-color:rgba(117, 117, 117, 0.726) !important;
+}
+
+.custom_weight{
+  font-weight: 500 !important;
+}
+
+.pic {
+  max-height: 525px;
+  max-width: 500px;
+}
+
+.user_lifepoints, .yellow_label, .points_label{
+  color: rgb(255, 166, 0);
+}
+
+.user_lifepoints, .points_label{
+  padding-left:1%;
+  padding-right:2%
+}
+
+.ai_lifepoints{
+  color: rgb(0, 89, 255);
+}
+
+.fields{
+  color: rgb(218, 181, 81);
+}
+
+.forest{
+  color: rgb(0, 180, 9);
+}
+
+.river{
+  color: rgb(55, 125, 255);
+}
+
+.fields,.forest,.river,.nonfield{
+  max-width:600px;
+  height:auto;
+}
+
+.block_main{
+  max-height: 700px;
+  max-width: 300px;
+  overflow:auto;
+  background-color:rgba(163, 163, 163, 0.726);
+  padding:3%
+}
+
+.block_main_2{
+  margin:auto;
+  max-width: 94%;
+  overflow:auto;
+  background-color:rgba(163, 163, 163, 0.726);
+  padding-bottom:3%;
+}
+
+.block_main_3{
+  display: block;
+  max-width: 300px;
+  width: 14vw;
+  overflow:auto;
+  background-color:rgba(163, 163, 163, 0.726);
+  padding:3%;
+}
+
+.block_main_4{
+  margin:auto;
+  max-width: 95%;
+  width: 30vw;
+  height: 275px;
+  overflow:auto;
+  background-color:rgba(163, 163, 163, 0.726);
+  padding-bottom:3%;
+  overflow: hidden;
+  margin-top: -25%;
+}
+
+.block_main_5{
+  display:block;
+  background-color:rgba(163, 163, 163, 0.726);
+  padding:3%;
+  max-height: 300px;
+  max-width:300px;
+}
+
+.block_main_6{
+  display:block;
+  background-color:rgba(163, 163, 163, 0.726);
+  max-height: 300px;
+  max-width:250px;
+  width: 35vw;
+}
+
+
+.position{
+  position: fixed;
+  bottom: 670px;
+  right: 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 10px;
+  background: rgba(255, 238, 0, 0.733);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius:12px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 166, 0);
+  cursor: pointer;
+  border-radius:50%;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  cursor: pointer;
+  border-radius:50%;
+}
+
+.slider_ai {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 10px;
+  background: rgba(0, 119, 255, 0.733);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius:12px;
+}
+  .slider_ai:hover {
+    opacity: 1;
+  }
+
+  .slider_ai::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(44, 160, 255);
+    cursor: pointer;
+    border-radius:50%;
+  }
+
+  .slider_ai::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius:50%;
+  }
+
+.logo{
+  height: 100px;
+  width: auto;
+}
+
+.body, .body_1{
+  width:100%;
+  display: inline-grid;
+  grid-template-columns: 35% 30% 35%;
+  justify-items: center;
+}
+
+.footer{
+  margin: auto;
+  width:100%;
+  display: inline-block;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.copyright{
+  margin: auto;
+  width:20%;
+  height:auto;
+  color:rgb(255, 166, 0);
+}
+
+.item_1,.item_2,.item_3,.item_4,.item_5{
+  padding-top: 20px;
+}
+
+.item_2 ,.item_5{
+  position:relative;
+  width:600px;
+  height:auto;
+}
+
+
+
+.board_grid{
+  width:100%;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  vertical-align: baseline;
+  
+}
+
+.board_img{
+  display: block;
+  margin-top:20%;
+  margin-left:auto;
+  margin-right:auto;
+  width:70%; 
+  height:auto;
+}
+
+.boardimg0, .boardimg1, .boardimg2, .boardimg3{
+  width:98%;
+  height:auto;
+  margin:1%;
+  background-size: cover;
+}
+
+.boardimg0{
+  background-image: url("../images/nonfield_bg.png");
+}
+
+.boardimg1{
+  background-image: url("../images/field.png");
+}
+
+.boardimg2{
+  background-image: url("../images/forest_bg.png");
+}
+
+.boardimg3{
+  background-image: url("../images/river_bg.png");
+}
+
+.USER .AI .Statistics .Board{
+  padding: 10px;
+}
+
+.Logo_1{
+  background-image: url("/projektas/Žalgiris/public/images/LT_PL_text.png");
+  width:100%;
+  height:50px;
+  background-size: cover;
+  position: fixed;
+}
+
+.stat_item_1, .stat_item_2{
+  width:80%;
+  height:auto;
+}
+
+.Statistics{
+  width:50%;
+  display: inline-grid;
+  grid-template-columns: 25%  25%;
+  justify-items: center;
+}
+
+.padding{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
