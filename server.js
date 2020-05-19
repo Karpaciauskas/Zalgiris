@@ -1,8 +1,8 @@
 const express = require('express');
-const {getQuestions} = require("../backend/controllers/Controller");
-const {getAttacks} = require("../backend/controllers/Controller");
-const {getAbout} = require("../backend/controllers/Controller");
-const {getGrunwald} = require("../backend/controllers/Controller");
+const {getQuestions} = require("./controllers/Controller");
+const {getAttacks} = require("./controllers/Controller");
+const {getAbout} = require("./controllers/Controller");
+const {getGrunwald} = require("./controllers/Controller");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const path = require('path');
@@ -32,12 +32,9 @@ connection.once("open", ()=> {
 });
 
 if (process.env.NODE_ENV === 'production') {
-  // Serve any static files
   app.use(express.static(path.join(__dirname, './')));
-    
-  // Handle React routing, return all requests to React app
   app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'client/build', 'public/index.html'));
   });
 }
 
