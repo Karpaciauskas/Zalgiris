@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Žalgirio mūšis",
   "proxy": "http://localhost:5000/",
+  "homepage": ".",
   "main": "server.js",
   "scripts": {
     "start": "react-scripts start",
