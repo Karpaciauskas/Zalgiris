@@ -306,14 +306,16 @@ function successGrunwaldResult(grunwald) {
     }
 }
 
-///const URL1='https://zalgiriomusis.herokuapp.com/Questions';
-///const URL2='https://zalgiriomusis.herokuapp.com/Attacks';
-///const URL3='https://zalgiriomusis.herokuapp.com/About';
-///const URL4='https://zalgiriomusis.herokuapp.com/Grunwald';
+const URL1='https://zalgiriomusis.herokuapp.com/Questions';
+const URL2='https://zalgiriomusis.herokuapp.com/Attacks';
+const URL3='https://zalgiriomusis.herokuapp.com/About';
+const URL4='https://zalgiriomusis.herokuapp.com/Grunwald';
+/*
 const URL1='http://localhost:5000/Questions';
 const URL2='http://localhost:5000/Attacks';
 const URL3='http://localhost:5000/About';
 const URL4='http://localhost:5000/Grunwald';
+*/
 
 export function fetchAttacks() {
     return dispatch => {
