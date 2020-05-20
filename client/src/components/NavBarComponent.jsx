@@ -19,12 +19,12 @@ class NavBarComponent extends Component {
 
       <div>
         <br></br>
-        <div className="btn-group shadow" >
+        <div className="nav btn-group shadow" >
           <Button className="button_color custom_weight" onClick={props.onHandleOpenModalFirst}>Apie žaidimą</Button>
           <Button className="button_color custom_weight" onClick={props.onHandleOpenModalSecond}>Žalgirio mūšis</Button>
         </div>
         
-          <div>
+          <div className="modals">
             <Modal show={props.show_first} animation={false}>
               <Modal.Header >
                 <Modal.Title className="w-100 text-center"> <center><h1>Apie žaidimą</h1></center></Modal.Title>

@@ -5,7 +5,7 @@ function AiComponent(props){
     return (
         <div className="AI text-center block_main rounded shadow">
             <img src="../images/DE_text.png" alt="logo" width="100%" height="auto" />
-            <h3> Strategija (1-3)</h3>
+            <h3> Strategija</h3>
             <input 
                 type="range" 
                 min="1" max="3" 

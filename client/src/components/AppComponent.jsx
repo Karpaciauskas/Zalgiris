@@ -26,6 +26,7 @@ class AppComponent extends Component{
 
 
         <div className="bg">
+            <div className="game">
             <div className="body_1">
             <NavBar/>
             <Header />
@@ -43,6 +44,7 @@ class AppComponent extends Component{
                 <div className="item_6"><Restart/></div>
             </div>
             <FooterComponent />
+            </div>
         </div>
     )
     }
