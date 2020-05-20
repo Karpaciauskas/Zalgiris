@@ -8,7 +8,7 @@ import User_lifepoints from '../containers/User_lifepoints'
 import AI_lifepoints from '../containers/AI_lifepoints'
 import Board from "../containers/Board";
 import Field from "../containers/Field"
-import Quiz from "../containers/Quiz";
+
 import Restart from "../containers/Restart";
 import NavBar from "../containers/NavBar";
 import PlaceholderComponent from "../containers/Placeholder";
@@ -37,11 +37,9 @@ class AppComponent extends Component{
                 <div className="middle_top"><Field/></div>
                 <div className="hp_item_ai"><AI_lifepoints/></div>
                 <div className="item_1"><User /></div>
-                <div className="item_2"><Board /></div>
-                <div className="item_3"><AI /></div>
-                <div className="item_4"><Quiz/> </div>
-                <div className="item_5"><Statistics /></div>
-                <div className="item_6"><Restart/></div>
+                <div className="item_2"><Board /><Statistics /></div>
+                <div className="item_3"><AI /><Restart/></div>
+                
             </div>
             <FooterComponent />
             </div>

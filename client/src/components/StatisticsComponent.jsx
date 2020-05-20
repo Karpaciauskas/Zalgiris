@@ -4,7 +4,7 @@ import {Button,Modal,Form} from 'react-bootstrap';
 function StatisticsComponent(props){
     return (
         <div className=" text-center block_main_4 rounded shadow">
-            <img className="padding" src="../images/results.png" alt="logo" width="50%" height="auto" />
+            <img className="padding" src="../images/results.png" alt="logo" width="40%" height="auto" />
                 <div className="board_grid text-center">
                     <div className="stat_item_1">
                         <img src="../images/LT_PL_text.png" alt="logo" width="100%" height="auto" /> 

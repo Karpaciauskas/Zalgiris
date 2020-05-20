@@ -15,9 +15,8 @@ class QuizComponent extends Component {
         const q = this.props.questions
         if (q.length==0) return (<div>{this.props.onHandleQuestions}</div>)
         return (
-        <div className=" text-center block_main_6 rounded shadow">
-          
-            {props.activeQuestion ==0 && props.user_lifepoints==0 && <div><br></br><Button className="rounded-pill" variant="warning" onClick={props.onHandleOpen}>TESTAS</Button><br></br><br></br></div>}
+        <div>
+            {props.activeQuestion ==0 && props.user_lifepoints==0 && <div><Button className="rounded-pill quiz-button" variant="info" onClick={props.onHandleOpen}>Testas</Button></div>}
             
             <div>
               <Modal show={props.show} animation={false}>
@@ -28,7 +27,7 @@ class QuizComponent extends Component {
                   <Form.Group >        
                   {
                     <b><ul>
-                      <div>
+                      <div className="Quiz_body">
                         {q.map((item,index) =>
                           <div key={index}>
                             {index===props.activeQuestion && (

@@ -8,11 +8,10 @@ const Author = [
 function FooterComponent(){
     return (
     <Fragment>
-        <Row className="p-2  m-2 fixed-bottom">
           <Col className ="sm-8 xl-8 text-left Copyright text-warning">
             {Author}
           </Col>
-        </Row>
+        
     </Fragment>
     )
 }

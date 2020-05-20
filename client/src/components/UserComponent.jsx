@@ -1,11 +1,12 @@
 import React from "react"
 import {Button, Modal, Form } from 'react-bootstrap'
+import Quiz from "../containers/Quiz";
 
 function UserComponent(props){
     return (
         <div className="USER text-center block_main rounded shadow">
             <img src="../images/LT_PL_text.png" alt="logo" width="100%" height="auto" />
-            <b>Turimi auksiniai: </b><b className="yellow_label">{props.user_coins}</b><img src="../images/coins.png" alt="logo" width="10%" height="auto" />
+            <b>Turimi auksiniai: </b><b className="yellow_label"><br></br>{props.user_coins}</b><img src="../images/coins.png" alt="logo" width="10%" height="auto" />
             <h3> Strategija</h3>
             <input 
                 type="range" 
@@ -90,7 +91,9 @@ function UserComponent(props){
                 && props.user_coins>=props.attack_cost[props.attack_type]
                 && <Button className="rounded-pill" variant="success" value="Pirkti" type="button" onClick={props.confirmBuy}>Pirkti už {props.attack_cost[props.attack_type]} <img src="../images/coins.png" alt="logo" width="25%" height="auto" /></Button> || <Button className="rounded-pill" variant="secondary" value="Pirkti" type="button" disabled >Pirkti už {props.attack_cost[props.attack_type]} <img src="../images/coins.png" alt="logo" width="25%" height="auto"  /></Button>}
             </form>
-          
+            <br></br>  
+            <Quiz/>
+         
         </div>
     )
 }       
