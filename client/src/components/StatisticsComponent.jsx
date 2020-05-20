@@ -6,14 +6,26 @@ function StatisticsComponent(props){
         <div className=" text-center block_main_4 rounded shadow">
             <img className="padding" src="../images/results.png" alt="logo" width="40%" height="auto" />
                 <div className="board_grid text-center">
+                {props.user_DMG<0 ?
+                    <div className="stat_item_1">
+                        <img src="../images/LT_PL_text.png" alt="logo" width="100%" height="auto" /> 
+                        <b>         padarė</b><h4 className="text-danger">{props.user_DMG}</h4> <b>žalos taškų</b>
+                    </div> 
+                    :
                     <div className="stat_item_1">
                         <img src="../images/LT_PL_text.png" alt="logo" width="100%" height="auto" /> 
                         <b>         padarė</b><h4>{props.user_DMG}</h4> <b>žalos taškų</b>
-                    </div> 
+                </div> }
+                {props.ai_DMG<0 ?
+                    <div className="stat_item_2">
+                        <img src="../images/DE_text.png" alt="logo" width="100%" height="auto" />
+                        <b> padarė</b>  <h4 className="text-danger">{props.ai_DMG}</h4> <b>žalos taškų</b> 
+                    </div>
+                    :
                     <div className="stat_item_2">
                         <img src="../images/DE_text.png" alt="logo" width="100%" height="auto" />
                         <b> padarė</b>  <h4>{props.ai_DMG}</h4> <b>žalos taškų</b> 
-                    </div>
+                    </div>}
                     <Modal show={props.show_score} animation={false}>
                     <Modal.Header >
                         <Modal.Title className="w-100 text-center"> <center className="text-center"><h1>Žalgirio mūšio pabaiga</h1></center></Modal.Title>

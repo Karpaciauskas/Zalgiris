@@ -76,21 +76,18 @@ function calculateResult(HP,field_type,ai,user,ai_units,user_units){
   HP.aiDMG=roundNumber((ai_damage-user_defense))
   
   if(HP.userDMG<0 && HP.aiDMG<0){
-    HP.userDMG=HP.userDMG*(-1)
-    HP.aiDMG=HP.aiDMG*(-1)
-    HP.user=HP.user-HP.userDMG
-    HP.ai=HP.ai-HP.aiDMG
+    HP.user=HP.user-HP.userDMG*(-1)
+    HP.ai=HP.ai-HP.aiDMG*(-1)
     console.log(HP.userDMG+ " user   " + HP.aiDMG+" ai")
   } 
   else if(HP.userDMG<0 && HP.aiDMG>=0){
-    HP.userDMG=HP.userDMG*(-1)
-    HP.user=HP.user-HP.userDMG
+
+    HP.user=HP.user-HP.userDMG*(-1)
     HP.user=HP.user-HP.aiDMG
     console.log(HP.userDMG+ " user   " + HP.aiDMG+" ai")
   } 
   else if(HP.aiDMG<0 && HP.userDMG>=0){
-    HP.aiDMG=HP.aiDMG*(-1)
-    HP.ai=HP.ai-HP.aiDMG
+    HP.ai=HP.ai-HP.aiDMG*(-1)
     HP.ai=HP.ai-HP.userDMG
     console.log(HP.userDMG+ " user   " + HP.aiDMG+" ai")
   }
