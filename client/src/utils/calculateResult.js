@@ -51,8 +51,8 @@ function calculateResult(HP,field_type,ai,user,ai_units,user_units){
     user_defense=user_defense+user.basedf*field_positive;
   }
   else{
-    user_damage=user_damage+user.basedmg*field_negative;
-    user_defense=user_defense+user.basedf*field_negative;
+    user_damage=user_damage-user.basedmg*field_negative;
+    user_defense=user_defense-user.basedf*field_negative;
   }
   //////////////////////////////////////////////
   if(ai.fields===true && field_type===1){
@@ -68,8 +68,8 @@ function calculateResult(HP,field_type,ai,user,ai_units,user_units){
     ai_defense=ai_defense+ai.basedf*field_positive;
   }
   else {
-    ai_damage=ai_damage+ai.basedmg*field_negative
-    ai_defense=ai_defense+ai.basedf*field_negative
+    ai_damage=ai_damage-ai.basedmg*field_negative
+    ai_defense=ai_defense-ai.basedf*field_negative
   }
   //////////////////////////////////////////////
   HP.userDMG=roundNumber((user_damage-ai_defense))
@@ -96,7 +96,6 @@ function calculateResult(HP,field_type,ai,user,ai_units,user_units){
     HP.ai=HP.ai-HP.userDMG
     console.log(HP.userDMG+ " user   " + HP.aiDMG+" ai")
   }
-
 
   ////////////////// Lifepoints below 0
   if(HP.ai<=0){

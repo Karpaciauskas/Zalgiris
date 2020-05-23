@@ -66,7 +66,7 @@ const initialState = {
     test_rewards:0,
     attack_user_amount:[0,0,0,0,0,0],
     attack_ai_amount:[0,0,0,0,0,0],
-    attack_cost:[0,10,10,20,20,40],
+    attack_cost:[0,10,10,20,25,40],
     user_coins:100,
     coin_reward:0,
     test_coin_rewards:0,
